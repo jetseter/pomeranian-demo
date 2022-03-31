@@ -1,0 +1,13 @@
+{
+    "azureFunctions.deploySubpath": "api",
+    "azureFunctions.postDeployTask": "npm install (functions)",
+    "azureFunctions.projectLanguage": "TypeScript",
+    "azureFunctions.projectRuntime": "~4",
+    "azureFunctions.preDeployTask": "npm prune (functions)",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/72e86be8-adf6-4a55-a1e3-b21042ec46d7/resourceGroups/pomeranian/providers/Microsoft.Web/sites/pomeranian-web",
+    "appService.deploySubpath": "."
+}

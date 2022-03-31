@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "command": "npm start",
+      "name": "Run frontend",
+      "request": "launch",
+      "type": "node-terminal"
+    },
+    {
+      "command": "npm start",
+      "name": "Run backend",
+      "request": "launch",
+      "type": "node-terminal",
+      "cwd": "${workspaceFolder}/api"
+    },
+    {
+      "name": "Attach to Node Functions",
+      "type": "node",
+      "request": "attach",
+      "port": 9229,
+      "preLaunchTask": "func: host start"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Run full stack",
+      "configurations": [
+        "Run frontend",
+        "Run backend"
+      ]
+    }
+  ]
+}

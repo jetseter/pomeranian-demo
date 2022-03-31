@@ -16,7 +16,7 @@ export const msalConfig = {
         authority: "https://login.microsoftonline.com/common", // 全球
         // authority: "https://login.microsoftonline.us",  // 美国
         // authority: "https://login.partner.microsoftonline.cn", // 中国
-        redirectUri: "http://localhost:3000"
+        redirectUri: "https://agreeable-flower-04dea7200.1.azurestaticapps.net"
     },
     cache: {
         cacheLocation: "sessionStorage", // This configures where your cache will be stored
